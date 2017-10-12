@@ -1,0 +1,23 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 100;
+}
+
+.container{
+	margin 0 auto;
+	max-width: 940px;
+	padding: 0 10px;
+}
+
+.header{
+	background: url(https://images-na.ssl-images-amazon.com/images/I/71GiD8PbZCL.jpg)
+	 no-repeat center center;
+	 text-align: center;
+	 background-size: cover;
+
+}
