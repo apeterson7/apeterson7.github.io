@@ -14,30 +14,78 @@ body{
 	padding: 0 10px;
 }
 
-.container h1{
+.header .container h1{
 	font-size: 50px;
-	color: #eeeeee;
+	color: #000;
 }
 
 .header{
-	background: url(https://images-na.ssl-images-amazon.com/images/I/71GiD8PbZCL.jpg)
+	 background: url(https://images-na.ssl-images-amazon.com/images/I/71GiD8PbZCL.jpg)
 	 no-repeat center center;
 	 text-align: center;
 	 background-size: cover;
+   height: 400px;
 
 }
 
 .header .container {
   position: relative;
-  top: 200px;
+  top: 100px;
 }
 
 
 .header h1 {
-  color: #fff;
+  color: #000;
   line-height: 100px; 
   font-size: 80px;
   margin-top: 0;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   text-transform: uppercase; 
+}
+.header p {
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 100px;
+  margin-top: 0;
+  text-transform: uppercase; 
+}
+
+.btn {
+  color: #fff;
+  background: #000;
+  padding: 10px 40px;
+  text-decoration: none; 
+  transition: background .5s; 
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.nav { 
+  background: #000;
+  height: 80px; 
+  width: 100%;
+}
+
+.nav ul {
+  height: 80px;
+  list-style: none;
+  margin: 0 auto; 
+  padding: 0;
+}
+
+.nav ul li {
+  color: #fff;
+  display: inline-block; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s; 
+}
+
+.btn:hover, .nav ul li:hover {
+  background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;  
 }
