@@ -23,6 +23,7 @@ Nav Bar, UL and LI styles
   height: 80px; 
   width: 100%;
   margin-left: 20px;
+
 }
 
 .nav ul {
@@ -32,7 +33,7 @@ Nav Bar, UL and LI styles
   padding: 0;
 }
 
-.nav ul li, .nav ul li a{
+.nav ul li{
   color: #494C4E;
   display: inline-block; 
   height: 80px;
@@ -41,6 +42,12 @@ Nav Bar, UL and LI styles
   padding: 0 10px;
   transition: background 200ms ease; 
   text-decoration: none;
+}
+
+.nav ul li a{
+  transition: background 200ms ease; 
+  text-decoration: none;
+  color: #494C4E;
 }
 
 .dropdown-content {
@@ -72,7 +79,7 @@ Header and container
 .header{
    background: #fff;
    background-size: cover;
-   height: 400px;
+   height: 200px;
 }
 
 .header h1 {
@@ -81,7 +88,6 @@ Header and container
   font-size: 50px;
   margin-top: 0;
   padding-right: 30px;
-  margin-bottom: 50px;
   text-align: right;
 
 }
@@ -109,6 +115,17 @@ Button style
 }
 
 .footer{
-  height: 300px;
-
+  height: 400px
 }
+
+/*
+content
+*/
+
+.content p{
+  padding-right: 30px;
+  margin: auto;
+  text-align: right;
+}
+
+
