@@ -25,15 +25,15 @@ Nav Bar, UL and LI styles
   margin-left: 20px;
 
 }
-
+/*
 .nav ul {
   height: 80px;
   list-style: none;
   margin: 0; 
   padding: 0;
 }
-
-.nav ul li{
+*/
+.nav a.li, .nav a.dropdown{
   color: #494C4E;
   display: inline-block; 
   height: 80px;
@@ -44,7 +44,7 @@ Nav Bar, UL and LI styles
   text-decoration: none;
 }
 
-.nav ul li a{
+.nav a.li{
   transition: background 200ms ease; 
   text-decoration: none;
   color: #494C4E;
@@ -64,11 +64,14 @@ Nav Bar, UL and LI styles
 .dropdown-content a{
   padding: 0;
   margin: 0;
-  display: inline;
-  width: 87%;
+  display: inline-block;
+  
+  text-decoration: none;
+  color: #494C4E;
+  padding: 10px;
 }
 
-.dropdown:hover .dropdown-content {
+a.dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -107,7 +110,7 @@ Button style
   margin-left: 30px;
 }
 
-.btn:hover, .nav ul li:hover, .nav ul li a:hover {
+.nav a.li:hover, .nav a.dropdown:hover, .dropdown-content a:hover{
   background: #2F7E9F;
   color: #fff;
   cursor: pointer; 
