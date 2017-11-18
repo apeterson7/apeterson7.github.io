@@ -35,26 +35,29 @@
 			<div class="col-sm-6">
 				<h1>Students Will Be Able To</h1>
 				<ul>
-					<li>Identify simple data types and their uses</li>
+					<li>Identify simple data types and explain their uses</li>
 					<li>Use basic Python Syntax</li>
 					<li>Navigate and edit files and directories from the command line</li>
 					<li>Use variables and user input</li>
+					<li>Use basic control structures (e.g. For Loop, If Statement)</li>
 				</ul>
 			</div>
 			<div class="col-sm-6">
 				<h1>Evidence</h1>
 				<ul>
+					<li>Student can identify three data types, their functionality and syntax</li>
+					<li>Student can explain user input, for loops, and if statements, and how to implement each in Python</li>
 					<li>Directories and Files created and edited from command line</li>
-					<li>Corrected Sample Python Script</li>
-					<li>Student's First Python Program</li>
-					<li></li>
+					<li>countUntil.py -- lists integer values up to an integer specified from command line args</li>
+					<li>numCompare.py -- compares two numbers from command line args</li>
+					<li>patterns.py -- uses for loops to create simple patterns based on user input</li>
 				</ul>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-12">
 					<h1>Lesson Plan</h1>
-					<div 
+					
 					<h3>Part 1 - Python Intro</h3>
 					<h4>Python Evaluator</h4>
 					<p>The Python Evaluator is a a program that runs for the command line, which evaluates bits of python code that you enter.  Lets try launching it.  Open your command prompt and type <code>python</code> and press enter. Your command prompt should now be <code>>>></code>.  Try entering the following:
@@ -82,6 +85,7 @@
 						<li>Integer: Store numbers, math operators can be applied, can be compared, can be printed</li>
 						<li>Boolean: Can be compared, are produced when two pieces of data of the same type are compared.</li>
 					</ul>
+					<p> All coding languages are documented in their entireity online, if you are interested in reading more about <a href="https://docs.python.org/2/library/string.html#module-string">strings</a>, <a href="https://docs.python.org/2/library/stdtypes.html">booleans</a>, or <a href="https://docs.python.org/2/c-api/int.html">integers</a>, feel free.  You will not understand everything you read in the documentation-- and that's okay.   As a programmer, it is important to learn how to identify relevant information and disregard information that is not relevant to what you are working on.</p>
 					<h4>Variables</h4>
 					<p>Reopen the python emulator. Now try entering the following</p>
 					<ul>
@@ -118,10 +122,36 @@
 						% pwd                # prints out your current directory
 					</pre>
 
-					<h3>Part 3 - Bug Fixing</h3>
-					<h4></h4>
+					<h3>Part 3 - First Python Program</h3>
+					<p>Before we create our first python programs, their is s
+					<h4>Input and Output</h4>
+					<pre>
+						#age.py
+						#asks the user to input their age, then prints it
+						age = input("What is your age?")
+						print("You are " + age + " years old.")
+					</pre>
+					<p>( Note: in python, comments are bits of text that are ignored when executing python code, they are used to explain code, credit authors and contributors, and annotate code with other relevant information. The syntax for comments in python is <code>#comment</code> )</p>
 
-					<h3>Part 4 - First Python Program</h3>
+					<h4>For Loop</h4>
+					<p>When coding, we often want to repeat the same bit of code multiple times. One way of doing so is with a For Loop. A basic For Loop uses an integer <code>i</code> with initial value 1, and both execute the code within the loop and increment i by 1, until i's value is equal to the specified range. The following Python code will produce the same output.</p>
+					<pre>
+						print(1)
+						print(2)
+						print(3)
+						print(4)
+						print(5)</pre>
+					<pre>
+						for i in range 5:
+							print(i)</pre>
+					<p>( Note: whitespace is important in python.  the for loop must end with <code>:</code> and the code within the For Loop must be indendented using <kbd>tab</kbd> )</p>
+					<h4>numCompare.py</h4>
+
+					<h4>If Statement</h4>
+
+					<h4>countUntil.py</h4>
+
+					<h3>Patterns</h3>
 					<h4>Create</h4>
 
 					<h3>Part 5 - Patterns</h3>
