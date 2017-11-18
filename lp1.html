@@ -114,23 +114,22 @@
 					<h4>Creating a Directory</h4>
 					<p>We have been using the command prompt to run the python evaluator, but that is only one program out of thousands that the command prompt can run. Before the mouse and fancy graphic displays were invented, the command prompt was the only way to navigate and manipulate the files on a computer. Below we will walk through a few simple commands to create a new folder for you to put your coding projects in.</p>
 					<pre>  
-						% cd                 # changes the current directory to your home directory
-						% pwd                # prints out the directory (to verify where you are)
-						% mkdir newProject   # creates a directory named 'newProject'
-						% ls                 # lists the contents of your current directory
-						% cd newProject      # changes your current directory to the one you just made
-						% pwd                # prints out your current directory
+						% cd                    # changes the current directory to your home directory
+						% pwd                   # prints out the directory (to verify where you are)
+						% mkdir pythonProjects  # creates a directory named 'pythonProjects'
+						% ls                    # lists the contents of your current directory
+						% cd pythonProjects     # changes your current directory to the one you just made
+						% pwd                   # prints out your current directory
 					</pre>
 
-					<h3>Part 3 - First Python Program</h3>
+					<h3>Part 3 - First Python Programs</h3>
 					<p>Before we create our first python programs, their is s
 					<h4>Input and Output</h4>
 					<pre>
 						#age.py
 						#asks the user to input their age, then prints it
 						age = input("What is your age?")
-						print("You are " + age + " years old.")
-					</pre>
+						print("You are " + age + " years old.")</pre>
 					<p>( Note: in python, comments are bits of text that are ignored when executing python code, they are used to explain code, credit authors and contributors, and annotate code with other relevant information. The syntax for comments in python is <code>#comment</code> )</p>
 
 					<h4>For Loop</h4>
@@ -145,16 +144,24 @@
 						for i in range 5:
 							print(i)</pre>
 					<p>( Note: whitespace is important in python.  the for loop must end with <code>:</code> and the code within the For Loop must be indendented using <kbd>tab</kbd> )</p>
-					<h4>numCompare.py</h4>
-
-					<h4>If Statement</h4>
-
 					<h4>countUntil.py</h4>
-
-					<h3>Patterns</h3>
-					<h4>Create</h4>
+					<p> Using text editor, create a new python file called "countUntil.py" in your pythonProjects directory.  countUntil.py should use get an integer from the user and use a for loop to print all integers from 1 until the specified integer.</p>
+					<h4>If Statement</h4>
+					<p>An if statement is a common type of conditional in programming languages.  It takes a condition, for example <code>5 > 3</code>, and evaluates whether it is <code>True</code> or <code>False</code>.  If it is <code>True</code> it will run the code under <code>if</code>, otherwise it will run the code under <code>else</code>.</p>
+					<pre>
+						apples = 3
+						oranges = 4
+						if(apples == oranges):
+							print("There are as many apples as oranges")
+						else:
+							print("The numbers of apples and oranges are unequal")</pre>
+					<p>Note: python requires <code>:</code> after if and else statements.</p>
+					<h4>numCompare.py</h4>
+					<p> Using text editor, create a new python file called "numCompare.py" in your pythonProjects directory.  numCompare.py should use get two integers from the user and use if statements to print the larger of the two integers.</p>
+					
 
 					<h3>Part 5 - Patterns</h3>
+					<p>Now lets put it all together.  Create a new python file in pythonProjects called "patterns.py".  When run, patterns.py should prompt the user for two numbers, the first will choose the design that patterns will run, and the second will choose how large the pattern will be.  To write patterns.py you will need to use For Loops, User Input, and If Statements.  Below is sample output for how the program should run.  Good Luck! </P>
 
 				</div>
 			</div>
