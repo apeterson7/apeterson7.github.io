@@ -29,8 +29,10 @@
 		line-height: 80%;
 	}
 
-	pre{
-		text-align: left;
+	.well{
+		white-space: pre-wrap;
+		text-transform: left;
+		padding: 0;
 	}
 
 	</style>
@@ -87,7 +89,7 @@
 					<li><code>>>> 2 + 3 > 3</code></li>
 					<li>Use <code>exit()</code> to quit the Python Evaluator</li>
 				</ul>
-				<p>Critical Thinking Questions: What produced an error?  How did the function of <code>+</code> change when you used words and numbers?  Can you determine some basic python syntax?</p?>
+				<p>Critical Thinking Questions: What produced an error?  How did the function of <code>+</code> change when you used words and numbers?  Can you determine some basic python syntax?</p>
 					<h4>Data Types</h4>
 					<p>Python has a few simple data types that store different types of data, and are manipulated in different ways.</p>
 					<ul>
@@ -133,137 +135,165 @@
 					</div>
 
 					<h3>Part 3 - First Python Programs</h3>
-					<p>Before we create our first python programs, their is s
-						<h4>Input and Output</h4>
-						<pre>
-							#author Alex Peterson
-							#age.py
-							#asks the user to input their age, then prints it
-							#last modified 11-18-2017
-							age = input("What is your age?")
-							print("You are " + age + " years old.")</pre>
-							<p>( Note: in python, comments are bits of text that are ignored when executing python code, they are used to explain code, credit authors and contributors, and annotate code with other relevant information. The syntax for comments in python is <code>#comment</code> )</p>
+					<p>Before we create our first python programs, their is s</p>
+					<h4>Input and Output</h4>
+					<div class="well">
+						#author Alex Peterson
+						#age.py
+						#asks the user to input their age, then prints it
+						#last modified 11-18-2017
+						age = input("What is your age?")
+						print("You are " + age + " years old.")
+					</div>
+					<p>( Note: in python, comments are bits of text that are ignored when executing python code, they are used to explain code, credit authors and contributors, and annotate code with other relevant information. The syntax for comments in python is <code>#comment</code> )</p>
 
-							<h4>For Loop</h4>
-							<p>When coding, we often want to repeat the same bit of code multiple times. One way of doing so is with a For Loop. A basic For Loop uses an integer <code>i</code> with initial value 1, and both execute the code within the loop and increment i by 1, until i's value is equal to the specified range. The following Python code will produce the same output.</p>
-							<pre>
-								print(1)
-								print(2)
-								print(3)
-								print(4)
-								print(5)</pre>
-								<pre>
-									for i in range 5:
-									print(i)</pre>
-									<p>( Note: whitespace is important in python.  the for loop must end with <code>:</code> and the code within the For Loop must be indendented using <kbd>tab</kbd> )</p>
-									<h4>countUntil.py</h4>
-									<p> Using text editor, create a new python file called "countUntil.py" in your pythonProjects directory.  countUntil.py should use get an integer from the user and use a for loop to print all integers from 1 until the specified integer.</p>
-									<h4>If Statement</h4>
-									<p>An if statement is a common type of conditional in programming languages.  It takes a condition, for example <code>5 > 3</code>, and evaluates whether it is <code>True</code> or <code>False</code>.  If it is <code>True</code> it will run the code under <code>if</code>, otherwise it will run the code under <code>else</code>.</p>
-									<pre>
-										apples = 3
-										oranges = 4
-										if(apples == oranges):
-										print("There are as many apples as oranges")
-										else:
-										print("The numbers of apples and oranges are unequal")</pre>
-										<p>Note: python requires <code>:</code> after if and else statements.</p>
-										<h4>numCompare.py</h4>
-										<p> Using text editor, create a new python file called "numCompare.py" in your pythonProjects directory.  numCompare.py should use get two integers from the user and use if statements to print the larger of the two integers.</p>
+					<h4>For Loop</h4>
+					<p>When coding, we often want to repeat the same bit of code multiple times. One way of doing so is with a For Loop. A basic For Loop uses an integer <code>i</code> with initial value 1, and both execute the code within the loop and increment i by 1, until i's value is equal to the specified range. The following Python code will produce the same output.</p>
+					<div class="well">
+						print(1)
+						print(2)
+						print(3)
+						print(4)
+						print(5)
+					</div>
+					<div class="well">
+						for i in range 5:
+						print(i)
+					</div>
+					<p>( Note: whitespace is important in python.  the for loop must end with <code>:</code> and the code within the For Loop must be indendented using <kbd>tab</kbd> )</p>
+					<h4>countUntil.py</h4>
+					<p> Using text editor, create a new python file called "countUntil.py" in your pythonProjects directory.  countUntil.py should use get an integer from the user and use a for loop to print all integers from 1 until the specified integer.</p>
+					<h4>If Statement</h4>
+					<p>An if statement is a common type of conditional in programming languages.  It takes a condition, for example <code>5 > 3</code>, and evaluates whether it is <code>True</code> or <code>False</code>.  If it is <code>True</code> it will run the code under <code>if</code>, otherwise it will run the code under <code>else</code>.</p>
+					<div class="well">
+						apples = 3
+						oranges = 4
+						if(apples == oranges):
+						print("There are as many apples as oranges")
+						else:
+						print("The numbers of apples and oranges are unequal")
+					</div>
+					<p>Note: python requires <code>:</code> after if and else statements.</p>
+					<h4>numCompare.py</h4>
+					<p> Using text editor, create a new python file called "numCompare.py" in your pythonProjects directory.  numCompare.py should use get two integers from the user and use if statements to print the larger of the two integers.</p>
 
 
-										<h3>Part 4 - Patterns</h3>
-										<h4>patterns.py</h4>
-										<p>Now lets put it all together.  Create a new python file in pythonProjects called "patterns.py".  When run, patterns.py should prompt the user for two numbers, the first will choose the design that patterns will run, and the second will choose how large the pattern will be.  To write patterns.py you will need to use For Loops, User Input, and If Statements.  Below is sample output for how the program should run.  Good Luck! </p>
+					<h3>Part 4 - Patterns</h3>
+					<h4>patterns.py</h4>
+					<p>Now lets put it all together.  Create a new python file in pythonProjects called "patterns.py".  When run, patterns.py should prompt the user for two numbers, the first will choose the design that patterns will run, and the second will choose how large the pattern will be.  To write patterns.py you will need to use For Loops, User Input, and If Statements.  Below is sample output for how the program should run.  Good Luck! </p>
 
-										<p>
-											The table bellow illustrates each of the four patterns that patterns.py must be able to generate, along with examples of each up to size 4.
-										</p>
-										<table class="table-condensed table-bordered">
-											<thread>
-												<tr>
-													<th></th>
-													<th>Pattern 1</th>
-													<th>Pattern 2</th>
-													<th>Pattern 3</th>
-													<th>Pattern 4</th>
-												</tr>
-											</thread>
-											<tbody>
-												<tr id="row 1">
-													<td>Size 1</td>
-													<td>
-														**
-														** 
-													</td>
-													<td>
-														* 
-													</td>
-													<td>
-
-													</td>
-													<td>
-
-													</td>
-												</tr>
-												<tr id="row 2">
-													<td>
-														Size 2
-													</td>
-													<td>
-														***
-														* *
-														*** 
-													</td>
-													<td>
-														*
-														*** 
-													</td>
-													<td></td>
-													<td></td>
-												</tr>
-												<tr id="3">
-													<td>
-														Size 3
-													</td>
-													<td>
-														****
-														*  *
-														*  *
-														****  
-													</td>
-													<td>
-														*
-														***
-														***** 
-													</td>
-													<td></td>
-													<td></td>
-												</tr>
-												<tr id="4">
-													<td>
-														Size 4
-													</td>
-													<td>
-														*****
-														*   *
-														*   *
-														*   *
-														***** 
-													</td>
-													<td>
-														*
-														***
-														****
-														***** 
-													</td>
-													<td></td>
-													<td></td>
-												</tr>
-											</tbody>				
-										</table>
-									</div>
-								</div>
-							</div>
-						</body>
-						</html>
+					<p>
+						The table bellow illustrates each of the four patterns that patterns.py must be able to generate, along with examples of each up to size 4.
+					</p>
+					<table class="table-condensed table-bordered table-striped">
+						<thread>
+							<tr>
+								<th></th>
+								<th>Pattern 1</th>
+								<th>Pattern 2</th>
+								<th>Pattern 3</th>
+								<th>Pattern 4</th>
+							</tr>
+						</thread>
+						<tbody>
+							<tr id="row 1">
+								<td>Size 1</td>
+								<td>
+									**
+									** 
+								</td>
+								<td>
+									* 
+								</td>
+								<td>
+									1
+								</td>
+								<td>
+									*
+								</td>
+							</tr>
+							<tr id="row 2">
+								<td>
+									Size 2
+								</td>
+								<td>
+									***
+									* *
+									*** 
+								</td>
+								<td>
+									*
+									*** 
+								</td>
+								<td>
+									1
+									22
+								</td>
+								<td>
+									**
+									*
+								</td>
+							</tr>
+							<tr id="3">
+								<td>
+									Size 3
+								</td>
+								<td>
+									****
+									*  *
+									*  *
+									****  
+								</td>
+								<td>
+									*
+									***
+									***** 
+								</td>
+								<td>
+									1
+									22
+									333
+								</td>
+								<td>
+									***
+									**
+									*
+								</td>
+							</tr>
+							<tr id="4">
+								<td>
+									Size 4
+								</td>
+								<td>
+									*****
+									*   *
+									*   *
+									*   *
+									***** 
+								</td>
+								<td>
+									*
+									***
+									****
+									***** 
+								</td>
+								<td>
+									1
+									22
+									333
+									4444
+								</td>
+								<td>
+									****
+									***
+									**
+									*
+								</td>
+							</tr>
+						</tbody>				
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>
