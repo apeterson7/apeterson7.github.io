@@ -4,6 +4,10 @@ title:  "A Novel Bias Mitigation Approach for GPT-2"
 date:   2023-05-16 04:59:47 -0400
 categories: nlp gpt bias
 ---
+
+In [this research paper](https://drive.google.com/file/d/16FqZmdpSPP5mBVK16s5Ob9VvSCr--UHZ/view?usp=share_link){:target="_blank"} I applied a new technique to control transformer-based language model output to the task of bias mitigation.
+
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:
