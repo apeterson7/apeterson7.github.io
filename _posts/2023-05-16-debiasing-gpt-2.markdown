@@ -7,27 +7,8 @@ categories: nlp gpt bias
 
 In [this research paper](https://drive.google.com/file/d/16FqZmdpSPP5mBVK16s5Ob9VvSCr--UHZ/view?usp=share_link){:target="_blank"} I applied a new technique to control transformer-based language model output to the task of bias mitigation.
 
+New work by [Geva, et al.](https://arxiv.org/pdf/2203.14680.pdf){:target="_blank} shows that the output of each feed forward network within the transformer blocks of a language model can be understood as an additive update on the token distribution of the model for a given context.  The work also shows that the individual vectors within each FFN can be projected onto the model's output vocabulary to reveal distinct concepts that are often interprettable.  By emphasizing these vectors, the model's behavior can be manipulated. 
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+With a small group of graduate students, I applied this technique to the task of bias mitigation.  We measured GPT-2 ([Radford, et al.](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf){:target="_blank"}) on three bias benchmarks from Googles [Big Bench project](https://github.com/google/BIG-bench){:target="_blank"} to obtain its baseline performance.  We then experimented with several techniques for selecting FFN value vectors and coefficients with which to emphasize (and de-emphasize) them. We also compare the results with a competing method for bias mitigation: fine-tuning on text from the [StereoSet](https://aclanthology.org/2021.acl-long.416.pdf){:target="_blank"} and compare our results.  
 
-Jekyll requires blog post files to be named according to the following format:
-
-`YEAR-MONTH-DAY-title.MARKUP`
-
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Overall, we observed 58.7% of the bias metrics across the three Big Bench tasks improved using a variation of our method.  Our results show that value vector emphasis may be a promising avenue towards mitigating bias in language models.
